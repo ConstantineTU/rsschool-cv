@@ -2,9 +2,9 @@
 
 ## Contact info
 
-- GitHub: [ConstantineTU] (https://github.com/ConstantineTU) 
+- GitHub: [ConstantineTU](https://github.com/ConstantineTU) 
 - Discord: Kostiks#0989
-- [VK] (https://vk.com/id200867944)
+- VK: [My page](https://vk.com/id200867944)
 
 ## About me
 
@@ -50,7 +50,7 @@ I feel that the conquest of the world is getting closer every day ...
 
 ## Education
 
-- I'm a study in JavaScript, courses at [htmlacademy](https://htmlacademy.ru/courses) and materials on the site learn.javascript.ru, do tasks on [codewars](https://www.codewars.com/users/ConstantineTU), and now I'm an RSSCHOOL student!
+- I'm a study in JavaScript, courses at [htmlacademy](https://htmlacademy.ru/courses) and materials on the site [learn.javascript.ru](https://learn.javascript.ru/), do tasks on [codewars](https://www.codewars.com/users/ConstantineTU), and now I'm an RSSCHOOL student!
 
 ## English
 
