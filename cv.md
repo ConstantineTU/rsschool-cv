@@ -22,3 +22,37 @@ I feel that the conquest of the world is getting closer every day ...
 - HTML, CSS
 - JavaScript
 - Git
+
+## Code example
+
+```
+  function arithmetic(a, b, arif){
+    
+    if(arif==="add"){
+      return a+b
+      }
+    if(arif==="subtract"){
+      return a-b
+      }    
+    if(arif==="multiply"){
+      return a*b
+      }
+    if(arif==="divide"){
+      return a/b
+      }
+    }
+```
+
+## Experience
+
+- I don't have relevant work experience, but I'm ready to learn.
+
+
+## Education
+
+- I'm a study in JavaScript, courses at [htmlacademy](https://htmlacademy.ru/courses) and materials on the site learn.javascript.ru, do tasks on [codewars](https://www.codewars.com/users/ConstantineTU), and now I'm an RSSCHOOL student!
+
+## English
+
+- Presumably: A1
+- Russian (native)
