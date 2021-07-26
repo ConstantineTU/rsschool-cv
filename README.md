@@ -1,1 +1,1 @@
-https://ConstantineTU.github.io/rsschool-cv/cv
+https://ConstantineTU.github.io/rsschool-cv/
