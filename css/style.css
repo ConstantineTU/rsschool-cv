@@ -140,6 +140,10 @@ header {
           box-shadow: 0 0 0 1px rgba(211, 211, 211, 0.774);
 }
 
+.header-info_contacts .item {
+  margin: 5px 0px 0px 0px;
+}
+
 .header-contact_list {
   margin: 10px 0px 0px 5px;
 }
@@ -180,13 +184,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
   color: #000;
-}
-
-.item_text a:hover {
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
-  color: #215574;
+}
+
+.item_text a:hover {
+  color: #38799e;
 }
 
 .item_text img {
@@ -215,48 +219,52 @@ header {
 }
 
 ._section h2 {
+  position: relative;
   margin: 10px 0px 10px 0px;
   font-size: 25px;
   font-family: "Montserrat", sans-serif;
+  line-height: 30px;
 }
 
 ._section p {
-  font-size: 16px;
-  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
 }
 
-@media (max-width: 892px) {
-  ._container {
-    max-width: 750px;
-  }
-
-  .tittle {
-    font-size: 40px;
-  }
+.main_column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-@media (max-width: 750px) {
-  ._container {
-    max-width: none;
-    padding: 0 10px;
-  }
+.main_column ._section {
+  margin: 30px 0px 0px 0px;
+}
 
-  header {
-    padding: 5px 0px 5px 0px;
-  }
+.aside-panel {
+  margin: 0px 30px 0px 0px;
+}
 
-  .header-info_top {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+.aside-panel .pre-code {
+  background-color: #e0e0e0;
+  padding: 8px 18px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
 
-  .header-info_avatar img {
-    max-width: 180px;
-  }
-
-  .tittle {
-    margin: 15px 0px 0px 0px;
-  }
+.lang-list_item {
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
 }
