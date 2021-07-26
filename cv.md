@@ -4,7 +4,7 @@
 
 - GitHub: [ConstantineTU](https://github.com/ConstantineTU) 
 - Discord: Kostiks#0989
-- VK: [My page](https://vk.com/id200867944)
+
 
 ## About me
 
