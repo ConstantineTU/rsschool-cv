@@ -206,6 +206,32 @@ header {
   margin: 35px 0px 0px 0px;
 }
 
+.footer-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 125px;
+}
+
+.footer-body__column img {
+  width: 50px;
+}
+
+.footer__text {
+  color: #000;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.footer__logo img {
+  width: 100px;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -267,4 +293,24 @@ header {
   letter-spacing: 0.5px;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 479.98px) {
+  .footer-body {
+    height: 90px;
+  }
+
+  .footer-body__column img {
+    width: 35px;
+  }
+
+  .footer__text {
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .footer__logo img {
+    width: 70px;
+  }
 }
