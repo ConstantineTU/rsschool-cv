@@ -295,6 +295,42 @@ header {
   font-family: "Roboto", sans-serif;
 }
 
+@media (max-width: 892px) {
+  ._container {
+    max-width: 750px;
+  }
+
+  .tittle {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 750px) {
+  ._container {
+    max-width: none;
+    padding: 0 10px;
+  }
+
+  header {
+    padding: 15px 0px 15px 0px;
+  }
+
+  .header-info_top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .header-info_avatar img {
+    max-width: 180px;
+  }
+
+  .tittle {
+    margin: 15px 0px 0px 0px;
+  }
+}
+
 @media (max-width: 479.98px) {
   .footer-body {
     height: 90px;
@@ -312,5 +348,12 @@ header {
 
   .footer__logo img {
     width: 70px;
+  }
+
+  .main_column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
