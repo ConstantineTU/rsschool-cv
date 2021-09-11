@@ -70,5 +70,26 @@ window.addEventListener('scroll', function () {
 		clearInterval(hideTopBtn)
 	}
 })
+// spoiler
+const spoilers = document.querySelectorAll('.spoiler')
+const btnSpoiler = document.querySelector('.spoiler__click')
+btnSpoiler.addEventListener('click', function () {
+	for (let spoiler of spoilers) {
+		if (spoiler.classList[1] === 'show') {
+			setTimeout(() => {
+				spoiler.classList.remove('show')
+				btnSpoiler.classList.remove('active')
+				setTimeout(() => {
+					spoiler.classList.remove('close')
+				}, 400);
+			}, 500);
+			spoiler.classList.add('close')
+		} else if (spoiler.classList[1] === undefined) {
+			btnSpoiler.classList.add('active')
+			spoiler.classList.add('show')
+			spoiler.classList.remove('close')
+		}
+	}
+})
 
 
