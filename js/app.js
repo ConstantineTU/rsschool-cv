@@ -70,7 +70,5 @@ window.addEventListener('scroll', function () {
 		clearInterval(hideTopBtn)
 	}
 })
-toTopBtn.addEventListener('click', function () {
-	window.scrollTo(0, 0);
-})
+
 
