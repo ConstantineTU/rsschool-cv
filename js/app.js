@@ -50,26 +50,6 @@ document.querySelector('#control-right').addEventListener('click', function () {
 		nextItem(currentItem)
 	}
 })
-// scroll to top
-let toTopBtn = document.getElementById('top__btn')
-let btnIsTop = true
-let hideTopBtn
-window.addEventListener('scroll', function () {
-	if (window.pageYOffset >= 300 && toTopBtn.classList[1] === undefined) {
-		toTopBtn.classList.add('show')
-		btnIsTop = false
-		if (!btnIsTop) {
-			hideTopBtn = setInterval(() => {
-				toTopBtn.classList.remove('show')
-				clearInterval(hideTopBtn)
-			}, 5000);
-		}
-	} else if (window.pageYOffset < 300) {
-		toTopBtn.classList.remove('show')
-		btnIsTop = true
-		clearInterval(hideTopBtn)
-	}
-})
 // spoiler
 const spoilers = document.querySelectorAll('.spoiler')
 const btnSpoiler = document.querySelector('.spoiler__click')
@@ -91,5 +71,27 @@ btnSpoiler.addEventListener('click', function () {
 		}
 	}
 })
-
-
+// burger-menu
+const headerBurger = document.querySelector('.header-burger')
+const burgerWrap = document.querySelector('.burger-wrap')
+const bodyLock = document.querySelector('body')
+const itemsMenu = document.querySelectorAll('.header-menu__item')
+burgerWrap.onclick = function () {
+	headerBurger.classList.toggle('active')
+	burgerWrap.classList.toggle('active')
+	bodyLock.classList.toggle('_lock')
+	burgerWrap.classList.remove('hide')
+}
+itemsMenu.forEach(item => item.addEventListener('click', function () {
+	if (headerBurger.classList[1] === 'active') {
+		burgerWrap.classList.remove('active')
+		headerBurger.classList.remove('active')
+		bodyLock.classList.remove('_lock')
+	}
+}))
+// burger-hide
+window.addEventListener('scroll', function () {
+	if (window.pageYOffset >= 300) {
+		burgerWrap.classList.add('hide')
+	} else { burgerWrap.classList.remove('hide') }
+})
