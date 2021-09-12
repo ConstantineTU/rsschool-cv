@@ -91,7 +91,7 @@ h6 {
 
 body {
   color: #000;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 body._lock {
@@ -357,6 +357,12 @@ header {
 
 .stars {
   padding: 0px 0px 0px 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-body {

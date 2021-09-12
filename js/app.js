@@ -65,7 +65,7 @@ window.addEventListener('scroll', function () {
 	} else if (window.pageYOffset < 300) {
 		toTopBtn.classList.remove('show')
 		btnIsTop = true
-		clearInterval(hideTopBtn)
+		clearTimeout(hideTopBtn)
 	}
 })
 // spoiler
