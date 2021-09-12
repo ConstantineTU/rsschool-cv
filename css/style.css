@@ -91,7 +91,7 @@ h6 {
 
 body {
   color: #000;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 body._lock {
@@ -357,6 +357,12 @@ header {
 
 .stars {
   padding: 0px 0px 0px 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-body {
@@ -471,8 +477,8 @@ html {
 }
 
 .about-me .spoiler.close {
-  -webkit-animation: close 2s;
-          animation: close 2s;
+  -webkit-animation: close 1.1s;
+          animation: close 1.1s;
 }
 
 .spoiler__click {
@@ -866,28 +872,34 @@ html {
 @-webkit-keyframes close {
   0% {
     opacity: 1;
+    font-size: 14px;
   }
 
   20% {
     opacity: 0;
+    font-size: 14px;
   }
 
   100% {
     opacity: 0;
+    font-size: 0;
   }
 }
 
 @keyframes close {
   0% {
     opacity: 1;
+    font-size: 14px;
   }
 
   20% {
     opacity: 0;
+    font-size: 14px;
   }
 
   100% {
     opacity: 0;
+    font-size: 0;
   }
 }
 

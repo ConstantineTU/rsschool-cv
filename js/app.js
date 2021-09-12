@@ -1,5 +1,3 @@
-
-
 // slider
 let items = document.querySelectorAll('.slider .project-item')
 let currentItem = 0
@@ -67,7 +65,7 @@ window.addEventListener('scroll', function () {
 	} else if (window.pageYOffset < 300) {
 		toTopBtn.classList.remove('show')
 		btnIsTop = true
-		clearInterval(hideTopBtn)
+		clearTimeout(hideTopBtn)
 	}
 })
 // spoiler
@@ -82,7 +80,7 @@ btnSpoiler.addEventListener('click', function () {
 				setTimeout(() => {
 					spoiler.classList.remove('close')
 				}, 400);
-			}, 500);
+			}, 1000);
 			spoiler.classList.add('close')
 		} else if (spoiler.classList[1] === undefined) {
 			btnSpoiler.classList.add('active')
