@@ -1,3 +1,5 @@
+
+
 // slider
 let items = document.querySelectorAll('.slider .project-item')
 let currentItem = 0
@@ -65,7 +67,7 @@ window.addEventListener('scroll', function () {
 	} else if (window.pageYOffset < 300) {
 		toTopBtn.classList.remove('show')
 		btnIsTop = true
-		clearTimeout(hideTopBtn)
+		clearInterval(hideTopBtn)
 	}
 })
 // spoiler

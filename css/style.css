@@ -435,8 +435,6 @@ html {
 }
 
 .aside-panel .pre-code {
-  background-color: #e0e0e0;
-  padding: 8px 18px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
