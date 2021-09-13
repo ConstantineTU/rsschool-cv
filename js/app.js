@@ -50,6 +50,26 @@ document.querySelector('#control-right').addEventListener('click', function () {
 		nextItem(currentItem)
 	}
 })
+// scroll to top
+let toTopBtn = document.getElementById('top__btn')
+let btnIsTop = true
+let hideTopBtn
+window.addEventListener('scroll', function () {
+	if (window.pageYOffset >= 300 && toTopBtn.classList[1] === undefined) {
+		toTopBtn.classList.add('show')
+		btnIsTop = false
+		if (!btnIsTop) {
+			hideTopBtn = setInterval(() => {
+				toTopBtn.classList.remove('show')
+				clearInterval(hideTopBtn)
+			}, 5000);
+		}
+	} else if (window.pageYOffset < 300) {
+		toTopBtn.classList.remove('show')
+		btnIsTop = true
+		clearInterval(hideTopBtn)
+	}
+})
 // spoiler
 const spoilers = document.querySelectorAll('.spoiler')
 const btnSpoiler = document.querySelector('.spoiler__click')
