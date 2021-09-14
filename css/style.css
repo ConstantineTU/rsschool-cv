@@ -475,6 +475,10 @@ header {
           align-items: center;
 }
 
+.grafics-editors {
+  padding: 0px 5px 0px 0px;
+}
+
 .footer-body {
   display: -webkit-box;
   display: -ms-flexbox;
