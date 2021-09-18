@@ -121,7 +121,7 @@ console.group('%cCV Constantine Terentyev. Self-verification:', 'color: red');
 console.log('Вёрстка валидная ' + '%c(10)',
 	'color: red');
 console.log(
-	'%c  проверено валидатором ' + '%chttps://validator.w3.org/nu/?doc=https%3A%2F%2Fconstantinetu.github.io%2Frsschool-cv%2F' + '%c – Document checking completed. No errors or warnings to show." +10',
+	'%c  проверено валидатором ' + '%chttps://validator.w3.org/nu/?doc=https%3A%2F%2Fconstantinetu.github.io%2Frsschool-cv%2F' + '%c – Document checking completed. No errors or warnings to show." (+10)',
 	'color: blue', 'color: green', 'color: blue'
 );
 console.log('вёрстка семантическая ' + '%c(20)',
